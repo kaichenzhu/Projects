@@ -1,11 +1,11 @@
-#include <iostream>
+#include <iostream>    //for outputing
 #include <fstream>     //read the file
 #include <tuple>       //this structure can store a 3D data.
 #include <string>      //for outputing the string
 
 using namespace std;
 
-string BufferStr;  //BufferStr stores the charactors read from the file LPAS.txt.
+string BufferStr;  //BufferStr stores the charactors read from the file LPAS.txt
 string Lexeme;    //Lexeme caches the string and digits, which is read from the BufferStr, temporarily.
 char Buffer[4096];   //Buffer[4096] chaches each line of the LPAS.txt.
 int i = 0;       //i is a flag in the string BufferStr, BufferStr[i] represents ith charactor in string BufferStr.
