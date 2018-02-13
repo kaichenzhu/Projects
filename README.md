@@ -27,7 +27,8 @@ All of codes should begin from a Program, and the following code should look lik
 You can see details in the parserBNF.docx which record the little pascal grammar.
 The limitation is that all of the 
 
-Code Reference:
+## Code Reference:
+```
 Program dumb ();   (*program dumb *)
 var
    n : integer; reverse: integer; temp : integer;
@@ -44,10 +45,10 @@ begin
    if (n=reverse) then writeln("yes!")
 end. (*hahahahahahahaha*)
 (Don’t input a semicolon before a end token!)
+```
 
 
-
-Error:
+## Error:
 Error("it'an illegal token!")-- scanner scan a alphabet after a number
 Error("This variable has not been declared!")-- miss a declaration of this variable
 Error("Same variable has been declared in this block! ")—can’t find the variable in the symbol table
@@ -60,7 +61,7 @@ Error("type mismatch in termprime")-- the type of left operand doesn’t match t
 error.setErrRout()—in each beginning of the parser part, assign the routine to the Error routine.
 error.setErrTok(get<1>(Token))-when some wrong occur in some tokens, it will record the wrong token.
 
-Limitation:
+## Limitation:
 Error report: If the program catches some errors but doesn’t stop because of some reasons, the Error routine and Error token will be set a wrong value.
 This compiler can’t report the line of the Error, I will improve it in the future work.	
 You should close the compiler after you run the execution, otherwise the symbol table will insert new symbols continuously. If you want to write new code, you can open it again.
