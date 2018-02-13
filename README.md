@@ -49,17 +49,17 @@ end. (*hahahahahahahaha*)
 
 
 ## Error:
-Error("it'an illegal token!")-- scanner scan a alphabet after a number
-Error("This variable has not been declared!")-- miss a declaration of this variable
-Error("Same variable has been declared in this block! ")—can’t find the variable in the symbol table
-Error("types mismatch in assignment")—the type of left operand doesn’t match the right operand.
-Error("Do not allow read into const value.")—read a value into the const variable
-Error("Do not allow read boolean.")—read a Boolean variable
-Error("Don't allow write the boolean type")—try to write a boolean variable
-Error("type mismatch in expressprime")-- the type of left operand doesn’t match the right operand in expressprime.
-Error("type mismatch in termprime")-- the type of left operand doesn’t match the right operand in termprime.
-error.setErrRout()—in each beginning of the parser part, assign the routine to the Error routine.
-error.setErrTok(get<1>(Token))-when some wrong occur in some tokens, it will record the wrong token.
+      Error("it'an illegal token!")-- scanner scan a alphabet after a number
+      Error("This variable has not been declared!")-- miss a declaration of this variable
+      Error("Same variable has been declared in this block! ")—can’t find the variable in the symbol table
+      Error("types mismatch in assignment")—the type of left operand doesn’t match the right operand.
+      Error("Do not allow read into const value.")—read a value into the const variable
+      Error("Do not allow read boolean.")—read a Boolean variable
+      Error("Don't allow write the boolean type")—try to write a boolean variable
+      Error("type mismatch in expressprime")-- the type of left operand doesn’t match the right operand in expressprime.
+      Error("type mismatch in termprime")-- the type of left operand doesn’t match the right operand in termprime.
+      error.setErrRout()—in each beginning of the parser part, assign the routine to the Error routine.
+      error.setErrTok(get<1>(Token))-when some wrong occur in some tokens, it will record the wrong token.
 
 ## Limitation:
 Error report: If the program catches some errors but doesn’t stop because of some reasons, the Error routine and Error token will be set a wrong value.
