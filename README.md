@@ -1,4 +1,4 @@
-# Projects
+# Compiler for Little Pascal
 User manual for compiler
 Install: Mars4_5.jar(http://courses.missouristate.edu/kenvollmar/mars/)  
       JDK(to run the jar package)
